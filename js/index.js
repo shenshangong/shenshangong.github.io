@@ -41,7 +41,7 @@ var S = {
       if (i !== -1) {
         S.UI.simulate(decodeURI(action).substring(i + 3));
       } else {
-        S.UI.simulate('|#countdown 3||祝|叶明|生日快乐|祝你|生日快乐|祝你幸福|祝你健康|前途光明|祝你|生日快乐！|#icon heart|#icon heart-empty|#icon heart');
+        S.UI.simulate('||祝|叶明|生日快乐|祝你|生日快乐|祝你幸福|祝你健康|前途光明|祝你|生日快乐！');
       }
 
       S.Drawing.loop(function () {
@@ -414,7 +414,7 @@ S.Dot = function (x, y) {
   this.e = 0.07;
   this.s = true;
 
-  this.c = new S.Color(255, 192, 203, this.p.a);
+  this.c = new S.Color(23, 129, 204, this.p.a);
 
   this.t = this.clone();
   this.q = [];
